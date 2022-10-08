@@ -20,6 +20,7 @@ GREY COLOR: #343a40
 
 body{
     font-family: "inter", sans-serif;
+    background-color: #f8f9fa
 }
 
 .accordion{
@@ -27,19 +28,77 @@ body{
     margin: 80px auto;
 }
 
+.grid-col-3{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px; 
+    margin-bottom: 50px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+}
+
+.grid-col-3.active{
+    border-top: 5px solid #087f5b;
+}
+
+.grid-col-3.active .number{
+    color: #087f5b;
+    opacity: 1;
+}
+.grid-col-3.active .heading--text{
+    color: #087f5b;
+    opacity: 1;
+}
+.grid-col-3.active .arrow{
+    stroke: #087f5b;
+    transform: rotate(180deg);
+}
 
 .number{
-
+    font-weight: 600;
+    font-size: 24px;
+    color: #868e96;
+    opacity: .8;
 }
 
 .heading--text{
-
+    font-weight: 600;
+    font-size: 24px;
+    color: #343a40;
+    opacity: .8;
+    padding: 10px;
 }
 
 .arrow{
-
+    width: 24px;
+    height: 24px;
+    stroke: #343a40;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
 }
 
 .hidden-box{
+    color: #484e53;
+    grid-column: 2 / 3;
+    padding: 10px;
+}
+.hidden-box.hidden{
+    display: none;
+}
 
+.hidden-box p{
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+ul{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #85898c;
 }

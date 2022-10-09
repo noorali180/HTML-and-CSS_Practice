@@ -2,6 +2,7 @@
 
 const slides = document.querySelectorAll(".slide");
 const dotsContainer = document.querySelector(".dots");
+const dots = document.querySelectorAll(".dot")
 const nextBtn = document.querySelector(".btn--right");
 const prevBtn = document.querySelector(".btn--left");
 
@@ -64,10 +65,23 @@ const slider = function(){
         goToSlide();
         activateDot();
     }
+
+    // got dot functionality...
+    const goToDot = function(e){
+        const clicked = e.target;
+
+        if(!clicked.classList.contains('dot')) return;
+
+        curSlide = +clicked.dataset.tab;
+        activateDot();
+        goToSlide();
+    }
+    
     
     // handling eventlisteners...
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
+    dotsContainer.addEventListener('click', goToDot);
 }
 
 slider();

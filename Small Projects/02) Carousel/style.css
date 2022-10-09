@@ -98,18 +98,22 @@ img{
     width: 40px;
     height: 40px;
     box-shadow: 0 12px 24px rgba(0,0,0,0.45);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn--left{
     top: 50%;
-    left: -25px;
-    transform: translateY(-50%);
+    left: 0;
+    transform: translate(-50%, -50%);
 }
 
 .btn--right{
     top: 50%;
-    right: -25px;
-    transform: translateY(-50%);
+    right: 0;
+    transform: translate(50%, -50%);
 }
 
 .slide{
@@ -122,6 +126,7 @@ img{
     background-color: #ffff;
     width: 10px;
     height: 10px;
+    cursor: pointer;
 }
 .dot.active{
     background-color: #087f5b;
@@ -129,9 +134,9 @@ img{
 
 .dots{
     position: absolute;
-    bottom: -14%;
+    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 32px);
 
     display: flex;
     gap: 8px;

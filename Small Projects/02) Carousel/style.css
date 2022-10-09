@@ -23,11 +23,14 @@ body{
 }
 
 section{
-    width: 1000px;
+    width: 900px;
+    height: 409.978px;
     margin: 100px auto;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow-x: hidden;
 }
 
 .btn-icon{
@@ -44,6 +47,7 @@ section{
     background-color: #087f5b;
     padding: 24px 80px;
     border-radius: 12px;
+
 }
 
 img{
@@ -56,10 +60,12 @@ img{
 
 .slide{
     display: flex;
-    gap: 80px;
+    gap: 64px;
     align-items: center;
     justify-content: space-between;
     color: #ffff;
+
+    transition: transform 1s ease
 }
 
 .testimonial-text{
@@ -108,4 +114,25 @@ img{
 
 .slide{
     position: absolute;
+}
+
+.dot{
+    border-radius: 50%;
+    border: 2px solid #087f5b;
+    background-color: #ffff;
+    width: 10px;
+    height: 10px;
+}
+.dot.active{
+    background-color: #087f5b;
+}
+
+.dots{
+    position: absolute;
+    bottom: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 8px;
 }

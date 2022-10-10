@@ -59,7 +59,7 @@ a{
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 70px 1fr 2fr 1fr;
+    grid-template-columns: 70px 1fr 2fr .75fr;
     grid-template-rows: 75px 1fr;
 }
 

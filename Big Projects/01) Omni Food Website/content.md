@@ -131,9 +131,9 @@ Components...
 
  ##################
 
- ## sections
+ ## Sections
 
-- Nav
+- Logo + Navigation
 - Hero
 - Featured in
 - How it works

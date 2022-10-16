@@ -28,6 +28,7 @@
 - greys: #555 
          #333
          #ddd
+         #888
 
 ## 03 BORDER RADIUS (px)
 
@@ -94,7 +95,7 @@ body {
 
 .subheading {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
   word-spacing: 0.75px;
@@ -288,6 +289,33 @@ body {
 }
 
 /* ************************
+    FEATURED IN SECTION
+************************* */
+.section-featured-in{
+  padding: 2.4rem 0 4.8rem 0;
+}
+.heading-featured-in{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #888;
+  text-align: center;
+  margin: 3.2rem 0;
+  word-spacing: 0.75px;
+  letter-spacing: 1px;
+}
+
+.logos-featured-in{
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos-featured-in img{
+  height: 3rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* ************************
     HOW IT WORKS SECTION
 ************************* */
 .section-how {
@@ -295,7 +323,7 @@ body {
 }
 
 .step-img {
-  width: 35%;
+  width: 45%;
 }
 
 .step-number{
@@ -339,8 +367,8 @@ body {
 }
 
 .step-imgs-box::after{
-  width: 50%;
-  padding-bottom: 50%;
+  width: 53%;
+  padding-bottom: 53%;
 
   background-color: #f8d8bd;
   z-index: -1

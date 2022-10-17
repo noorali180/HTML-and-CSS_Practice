@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px;  changing the default font-size(16px) of browser*/
+    /* In percentage */
+    /* font-size: 10px / 16px = 0.625px = 62.5% */
+    /* Percentage of user's browser font-size setting */
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+/* ******************
+      GENERAL STYLING
+     ****************** */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 4.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 2.6rem;
+    margin-bottom: 4.2rem;
+}
+
+.subheading {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    word-spacing: 0.75px;
+    letter-spacing: 1px;
+    color: #cf711f;
+    margin-bottom: 1.6rem;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 8rem;
+}
+
+.grid--2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-center-v {
+    align-items: center;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+
+    transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.btn--stroke:link,
+.btn--stroke:visited {
+    color: #555;
+    background-color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #cf711f;
+}
+
+.btn--stroke:hover,
+.btn--stroke:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all .3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}

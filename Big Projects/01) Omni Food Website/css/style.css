@@ -22,8 +22,8 @@
 ## 02 COLORS
 
 - primary: #e67e22
-- tints: #fdf2e9
-- shades: #cf711f
+- tints: #fdf2e9, #eea564
+- shades: #cf711f, 
 - accent: 
 - greys: #555 
          #333
@@ -39,7 +39,8 @@
  - default: 9
 
 ## 04 SHADOWS
-
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.35);
 
 ## 05 Spacing-system (px)
 
@@ -420,28 +421,29 @@
   padding: 9.6rem 0;
 }
 
-.pricing-plan{
+.pricing-plan {
   padding: 4.8rem;
   border-radius: 11px;
   width: 85%;
 }
 
-.pricing-plan--starter{
+.pricing-plan--starter {
   justify-self: end;
   box-shadow: inset 0 0 0 3px #fdf2e9;
 }
-.pricing-plan--complete{
+
+.pricing-plan--complete {
   background-color: #fdf2e9;
   position: relative;
   overflow: hidden;
 }
 
-.pricing-plan--complete:before{
+.pricing-plan--complete:before {
   content: "Best Value";
   position: absolute;
   top: 7%;
   right: -15%;
-  
+
   font-size: 1.4rem;
   font-weight: 700;
   color: #333;
@@ -452,7 +454,7 @@
   rotate: 45deg;
 }
 
-.plan-header{
+.plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
 }
@@ -466,37 +468,37 @@
   color: #cf711f;
 }
 
-.plan-price{
+.plan-price {
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
 }
 
-.plan-price span{
+.plan-price span {
   font-size: 3rem;
   font-weight: 500;
   margin-right: .8rem;
 }
 
-.plan-text{
+.plan-text {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #6f6f6f;
 }
 
-.plan-sign-up{
+.plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
 }
 
-.plan-details{
+.plan-details {
   font-size: 1.8rem;
   line-height: 1.6;
   text-align: center;
 }
 
-.feature-icon{
+.feature-icon {
   color: #e67e22;
   width: 3rem;
   height: 3rem;
@@ -506,14 +508,44 @@
   border-radius: 50%;
 }
 
-.feature-title{
+.feature-title {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1.6rem;
   color: #333;
 }
 
-.feature-text{
+.feature-text {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+
+/* ******************************
+    CALL TO ACTION(CTA) SECTION
+******************************** */
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  background-image: linear-gradient(to right bottom, #eea564, #e67e22);
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+
+  height: 50rem;
+}
+
+.cta-text-box {}
+
+.cta-img-box {
+  background-image: linear-gradient(to right bottom, rgba(238, 164, 100, 0.3), rgba(230, 125, 34, 0.3)),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }

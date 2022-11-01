@@ -20,6 +20,11 @@ body {
     color: #555;
 }
 
+*:focus{
+    outline: none;
+    box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+}
+
 /* ******************
       GENERAL STYLING
      ****************** */
@@ -107,6 +112,7 @@ body {
     align-items: center;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     text-decoration: none;
@@ -118,6 +124,9 @@ body {
     color: black;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
+
+    /* only for .btn class without link */
+    border: none;
 
     transition: all 0.3s;
 }

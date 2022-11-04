@@ -526,7 +526,7 @@
     CALL TO ACTION(CTA) SECTION
 ******************************** */
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 3.2rem 0 12.8rem 0;
 }
 
 .cta {
@@ -609,11 +609,89 @@
     box-shadow: 0 0 0 4px #5c320e;
 }
 
-
-
 .cta-img-box {
   background-image: linear-gradient(to right bottom, rgba(238, 164, 100, 0.3), rgba(230, 125, 34, 0.3)),
     url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+/* ******************************
+    FOOTER
+******************************** */
+.footer {
+  padding: 12.8rem 0 9.6rem 0;
+
+  border-top: 2px solid #eee;
+}
+
+.grid--footer{
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 6rem;
+}
+
+.footer-heading{
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.footer-link:hover,
+.footer-link:active{
+  color: #333;
+}
+
+.logo-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.copyright{
+  margin-top: auto;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.contact{
+  font-style: normal;
+}
+
+.address{
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.social-links{
+  list-style: none;
+
+  display: flex;
+  gap: 3.2rem;
+}
+
+.social-icon{
+  width: 2.4rem;
+  height: 2.4rem;
 }

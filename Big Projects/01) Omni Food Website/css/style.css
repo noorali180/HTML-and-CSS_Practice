@@ -628,7 +628,7 @@
 .grid--footer{
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
-  gap: 6rem;
+  gap: 4.8rem;
 }
 
 .footer-heading{
@@ -688,7 +688,7 @@
   list-style: none;
 
   display: flex;
-  gap: 3.2rem;
+  gap: 1.6rem;
 }
 
 .social-icon{

@@ -1,0 +1,144 @@
+/* ***********************************
+    BELOW 1322px (small laptops)
+************************************** */
+/* 1322 / 16 = 83em */
+@media (max-width: 84em){
+    .hero{
+        max-width: 125rem;
+    }
+
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+}
+
+/* ***********************************
+    BELOW 1200px (landscape tablets)
+************************************** */
+/* 1200 / 16 = 75em */
+@media (max-width: 75em){
+    /* 9 / 16 = 0.5625 = 56.25% */
+    html{
+        font-size: 56.25%;
+    }
+
+    .hero{
+        max-width: 120rem;
+    }
+
+    .heading-secondary{
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary{
+        font-size: 2.4rem;
+    }
+
+    .grid{
+        row-gap: 6.4rem;
+        column-gap: 4.8rem;
+    }
+
+    .hero{
+        gap: 4.8rem;
+    }
+
+    .header{
+        padding: 0 3.2rem;
+    }
+
+    .main-nav-links{
+        gap: 3.2rem;
+    }
+
+}
+
+/* ***********************************
+    BELOW 940px (tablets)
+************************************** */
+/* 940 / 16 = 59em */
+
+@media (max-width: 59em){
+
+ /* 8 / 16 = 0.5 = 50% */
+ html{
+    font-size: 50%;
+}
+
+/* .grid{
+    column-gap: 3.2rem;
+} */
+
+.hero{
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 0 8rem;
+}
+
+.hero-img img{
+    width: 60%;
+}
+
+.hero-text, .hero-img{
+    text-align: center;
+}
+
+.customers{
+    margin-top: 3.2rem;
+}
+
+.logos-featured-in img{
+    height: 2.2rem;
+}
+
+.step-number {
+    font-size: 6.2rem;
+}
+
+.meal-details{
+    padding: 1.6rem 2.4rem 3.2rem 2.4rem;
+}
+
+.section-testimonials{
+    grid-template-columns: 1fr;
+}
+
+.testimonials{
+    row-gap: 6.4rem;
+}
+
+.gallery{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-item:nth-child(13),
+.gallery-item:nth-child(14),
+.gallery-item:nth-child(15){
+    display: none;
+}
+
+.cta{
+    grid-template-columns: 3fr 2fr;
+}
+
+.cta-form{
+    grid-template-columns: 1fr;
+}
+
+.cta input,
+.cta select,
+.cta button{
+    padding: 1.8rem;
+}
+
+.btn--form{
+    margin-top: 1.4rem;
+}
+
+}
+
+/* - font-sizes (px):   
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - spacing: 
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

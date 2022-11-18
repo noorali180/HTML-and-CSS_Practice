@@ -65,6 +65,7 @@
   justify-content: space-between;
   padding: 0 4.8rem;
   background-color: #fdf2e9;
+  position: relative;
 }
 
 .main-nav-links {
@@ -694,4 +695,29 @@
 .social-icon{
   width: 2.4rem;
   height: 2.4rem;
+}
+
+/* ******************************
+  MOBILE NAVIGATION
+******************************** */
+
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.mobile-nav-icon{
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+.mobile-nav-icon[name = "close-outline"]{
+  display: none;
 }

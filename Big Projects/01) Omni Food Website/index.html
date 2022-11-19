@@ -6,17 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- meta tag to improve SEO -->
+  <meta name="description"
+    content="Omnifood is an AI-generated food subscription that will make you eat healthy again, 365 days per year, it's tailored to your personal tastes and nutritional needs." />
+
+  <!-- FAVICON LINK -->
+
+  <!-- for web -->
+  <link rel="icon" href="img/favicons/favicon_reduced.png">
+  <!-- for iOS -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <!-- for android it's bit different (manifest file) -->
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <!-- Google fonts link -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/queries.css">
-  <title>Omni Food</title>
+
+  <title>Omnifood &mdash; Never cook again</title>
 </head>
 
 <body>
   <header class="header">
-    
+
     <a href="#">
       <img src="img/omnifood-logo.png" alt="branding logo" class="logo">
     </a>
@@ -72,8 +88,13 @@
           </div>
         </div>
 
-        <div class="hero-img">
-          <img src="img/hero.png" alt="women eating food, some bowls of food on the table" />
+        <div class="hero-img-box">
+          <picture>
+            <source srcset="img/hero.webp" type="image/webp"/>
+            <source srcset="img/hero-min.png" type="image/png"/>
+
+            <img src="img/hero-min.png" class="hero-img" alt="women eating food, some bowls of food on the table" />
+          </picture>
         </div>
 
       </div>
@@ -496,24 +517,25 @@
               Get your first meal for free!
             </h2>
             <p class="cta-text">
-              Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
+              Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause
+              anytime. And the first meal is on us!
             </p>
 
-            <form action="#" class="cta-form">
+            <form name="sign-up" class="cta-form" netlify>
 
               <div>
                 <label for="user-name">Full Name</label>
-                <input id="user-name" type="text" placeholder="Noor Ali" required>
+                <input id="user-name" name="full-name" type="text" placeholder="Noor Ali" required>
               </div>
 
               <div>
                 <label for="email">Email address</label>
-                <input id="email" type="email" placeholder="me@example.com" required>
+                <input id="email" name="email" type="email" placeholder="me@example.com" required>
               </div>
 
               <div>
                 <label for="where">Where did you hear from us?</label>
-                <select id="where" required>
+                <select id="where" name="where" required>
                   <option value="">Please choose one option:</option>
                   <option value="friend">Friend or Family memeber</option>
                   <option value="web">Website</option>
@@ -537,14 +559,20 @@
   <footer class="footer">
     <div class="container grid--footer">
       <div class="logo-col">
-        <a href="#" >
+        <a href="#">
           <img src="img/omnifood-logo.png" alt="branding logo" class="logo footer-logo">
         </a>
 
         <ul class="social-links">
-          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
-          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
-          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+          <li><a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a></li>
+          <li><a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a></li>
         </ul>
 
         <p class="copyright">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved</p>
@@ -555,7 +583,7 @@
         <address class="contact">
           <p class="address">
             623 Harrison St., 2nd Floor, San Francisco, CA 94107
-          </p> 
+          </p>
           <p>
             <a href="tel:0312-2911901" class="footer-link">0312-2911901</a><br>
             <a href="mailto:hello@omnifood.com" class="footer-link">hello@omnifood.com</a>
@@ -591,7 +619,7 @@
           <li><a href="#" class="footer-link">Privacy & terms</a></li>
         </ul>
       </nav>
-      
+
     </div>
   </footer>
 

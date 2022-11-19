@@ -206,7 +206,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .heading-secondary{
+    .heading-secondary {
         margin-bottom: 6.4rem;
     }
 
@@ -221,12 +221,11 @@
 
     .cta {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .cta-img-box {
         grid-row: 1;
-        /* height: 40rem; */
+        height: 40rem;
     }
 
     .cta-form {
@@ -246,7 +245,101 @@
     .contact-col {
         grid-column: span 3;
     }
+
+    .pricing-plan--complete:before {
+        top: 6%;
+        right: -17%;
+    }
 }
+
+/* ***********************************
+    BELOW 504px (mobile phones)
+************************************** */
+/* 504 / 16 = 31em */
+
+@media (max-width: 31em) {
+
+    .btn,
+    .btn:link,
+    .btn:visited{
+        padding: 1.6rem;
+    }
+
+    .grid--2-col,
+    .grid--3-col,
+    .grid--4-col{
+        grid-template-columns: 1fr;
+    }
+
+    .header{
+        padding: 0 1.6rem;
+    }
+    .hero {
+        padding: 0 2.4rem;
+    }
+
+    .hero-img img{
+        width: 80%;
+    }
+
+    .logos-featured-in img{
+        height: 1.2rem;
+    }
+
+    .section-featured-in{
+        padding: 0 1.2rem;
+    }
+
+    .step-imgs-box:nth-child(2){
+        grid-row: 1;
+    }
+
+    .step-imgs-box:nth-child(6){
+        grid-row: 5;
+    }
+
+    .step-imgs-box{
+        transform: translateY(10%);
+    }
+
+    
+    .meal,
+    .pricing-plan
+    {
+        width: 75%;
+        justify-self: center;
+    }
+    
+    .pricing-plan--complete:before {
+        top: 6%;
+        right: -16%;
+    }
+    
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-container{
+        padding: 2.4rem 3.2rem;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta-img-box{
+        height: 30rem;
+    }
+
+    .cta-text-box{
+        padding: 3.2rem 2rem;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* - font-sizes (px):   
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
